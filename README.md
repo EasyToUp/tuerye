@@ -1,0 +1,2 @@
+# tuerye
+study python note
