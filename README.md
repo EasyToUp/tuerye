@@ -2,10 +2,11 @@
 * study python note
 
 ## 20220911
-![a0](doc\image\20220912011414.png)  
+
+![a0](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/20220912011414.png)  
 
 
-![a](doc\image\20220912011335.png)  
+![a](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/20220912011335.png)  
 ```py
 
 code_ranks = [
@@ -48,7 +49,7 @@ print('秦可卿排在倒数三名的次数是', str(count))
 
 ```
 
-![b](doc\image\20220912011401.png)
+![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/20220912011401.png)
 
 ```  python
 # 题目难读懂，要写很多123这种浪费时间的事情
