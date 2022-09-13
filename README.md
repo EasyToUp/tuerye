@@ -1,7 +1,7 @@
 # tuerye
 * study python note
 
-## 20220911
+## 2022年09月11
 
 ![a0](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/20220912011414.png)  
 
@@ -90,4 +90,87 @@ def translate(word):
 
 translate('June')
 
+```
+
+## 2022年09月12
+### notice
+
+* 不要忘记调用函数！！！
+* 先判断后判断写出来冗余程度有差异
+
+![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/b20220913122748.png)
+
+```py
+mount = 8848130
+paper = 0.08
+n=0
+list = []
+while paper < 8848130:
+  paper = paper * 2
+  n += 1
+  list.append(n)
+#
+  #print(list)
+a = list[-1]
+#print(a)
+print('需要对折' + str(a) + '次')
+
+```
+
+
+![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/c20220913122802.png)
+
+```py
+usernames = ['小贝', '闻闻', '黄帮主']
+passwords = ['123', '520', '666']
+
+def login(username, password):
+  if username in usernames:
+    n = usernames.index(username)
+    print(n)
+    m = passwords[n]
+    print(m)
+    if m == password:
+      print(username + '登录成功')
+    else:
+      print('密码错误')
+  else:
+    print('账号不存在')
+# 使用 input() 函数输入账号密码
+username = input('请输入账号:')
+password = input('请输入密码:')
+# 将账号密码传入 login() 函数判断是否可以登录
+login(username, password)
+```
+
+
+![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/a20220913122731.png)
+
+```py
+
+# 有了下面这行代码，get_num() 函数才有效
+# 千万不要手滑删除啦！
+from random import randint
+lottery = []
+
+# 不需要修改函数，按照提示调用即可
+def get_num():
+  i = 1
+  while i <= 6:
+    number = randint(0, 99) 
+    print(number)
+    i += 1
+    lottery.append(number)
+get_num()    
+print(lottery)
+#  return randint(0, 99)
+
+
+
+# 请你补全代码
+# 用循环获得 6 个随机数存到 lottery 里作为中奖号码
+
+
+# 打印出最终的 lottery 列表
+print('本期彩票中奖号码为：'+ str(lottery))
 ```
