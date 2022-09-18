@@ -399,3 +399,136 @@ for i in new_homework:
 
 ![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/A_20220915004811.png)
 
+### 2022年09月17-18 
+
+
+![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/
+a20220919002542.png)
+
+```py
+
+# 赛亚人
+class Saiyan:
+  hair = '黑发'
+  # 每个赛亚人战斗力不同
+  def __init__(self, ATK):
+    self.ATK = ATK
+
+# 请在下方定义“超级赛亚人”类
+class SuperSaiyan(Saiyan): 
+  pass
+  def hensin(self):
+  # 超级赛亚人能够变身
+    self.hair = '金发'
+    self.ATK = self.ATK * 50
+    # 变身后发色变为金色
+    # 战斗力变为原来的 50 倍
+
+
+# 卡卡罗特是超级赛亚人，初始战斗力为 25
+kakarot = SuperSaiyan(25)
+# 他是赛亚人
+if isinstance(kakarot, Saiyan):
+  print('卡卡罗特是赛亚人，长着一头{}'.format(kakarot.hair))
+else:
+  print('卡卡罗特不是赛亚人')
+print('他的战斗力是 {}'.format(kakarot.ATK))
+
+# 并且能通过变身提升战斗力
+print('卡卡罗特伴随着一阵金光，开始变身！')
+kakarot.hensin()
+print('变身后的战斗力是 {}'.format(kakarot.ATK))
+
+
+```
+
+
+![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/
+b20220919002556.png)
+
+```py
+
+key = 'R'
+  card = random.choice(cards[key])
+  print('恭喜抽到{}卡，你拿到的英雄是{}'.format(key,card))
+  return key
+  
+while True:
+ if draw_card2() == 'SSR':
+  break
+#  if key == 'SSR':
+#    return
+  
+# 缓慢打印
+
+'''def print_slowly(text, delay=0.1):
+  # 在一行内逐字打印 text
+  for letter in text:
+    print(letter, end='')
+    sleep(delay) # 每打印一个字，暂停 delay 秒
+  print('')
+  '''
+
+```
+
+```py
+
+from random import randint
+
+# 选手类
+class Player:
+  # 每当创建新对象，都自动为他登记信息
+  def __init__(self, name, HP, ATK):
+    self.name = name  # 为选手登记姓名
+    self.HP = HP      # 为选手登记生命值
+    self.ATK = ATK    # 为选手登记攻击力
+    print('已成功登记信息')
+    self.show_info()
+    
+  
+  # 展示信息
+  def show_info(self):
+    print('+ {}\tHP: {}\tATK: {}\n'.format(self.name, self.HP, self.ATK))
+    
+
+
+
+  # 发动攻击
+  def hit(self,target):
+    print('>> 【{}】向【{}】发动攻击，\n'.format(self.name,target.name)
+#    target.defend(self.AATK)
+
+  # 防御攻击
+  def defend(self,damage):
+    if randint(0, 100) <= 20:
+      print('>> 【{}】完美躲避了攻击！\n'.format(self.name))
+    else:
+      self.HP = self.HP - damage
+      print('>> 【{}】收到了{}点伤害！\n'.format(self.name,damage))
+
+# 实例化 Player 类，生成一个新的实例对象，赋值给变量 kakarot
+kakarot = Player('卡卡罗特',100,25)
+# 实例化 Player 类，生成一个新的实例对象，赋值给变量 piccolo
+piccolo = Player('比克大魔王',100,25)
+# 展开决斗
+print('-'*32 + '\n')
+while True:
+  # 每回合开始，由卡卡罗特先发动攻击
+  hit(kakarot,piccolo)
+  # 判断此时决斗是否分出胜负
+  if piccolo.HP <= 0:
+    print('\n{}获胜'。format(kakarot.name))
+    break
+  # 若未分出胜负，则攻防交换，由比克大魔王发动攻击
+  hit(piccolo,kakarot)
+  # 判断此时决斗是否分出胜负
+  if kakarot.HP <= 0:
+    print('\n{}获胜'。format(piccolo.name))
+    break
+  # 每回合结束，打印出两人当前信息
+  piccolo.show_info()
+  kakarot.show_info()
+  print('-'*32 + '\n')
+
+
+```
