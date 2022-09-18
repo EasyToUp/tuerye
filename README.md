@@ -402,8 +402,7 @@ for i in new_homework:
 ### 2022年09月17-18 
 
 
-![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/
-a20220919002542.png)
+![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/a20220919002542.png)
 
 ```py
 
@@ -443,8 +442,7 @@ print('变身后的战斗力是 {}'.format(kakarot.ATK))
 ```
 
 
-![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/
-b20220919002556.png)
+![b](https://raw.githubusercontent.com/EasyToUp/tuerye/main/doc/image/b20220919002556.png)
 
 ```py
 
