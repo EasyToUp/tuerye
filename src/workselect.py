@@ -8,15 +8,17 @@
 @Version      :1.0
 '''
 
-
 money = 1000
 
+
 def work(add):
-  new = money + add
-  global zq
-  zq = add
-  print(zq)
-  return new
+    new = money + add
+    global zq
+    zq = add
+    print(zq)
+    return new
+
+
 new1 = work(int(input("你赚多少钱")))
 print(new1)
 print(zq)

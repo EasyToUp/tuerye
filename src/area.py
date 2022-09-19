@@ -10,7 +10,8 @@
 
 
 def area(r):
-  area = 3.14 * r * r 
-  print("该圆的面积是" + str(area))
+    area = 3.14 * r * r
+    print("该圆的面积是" + str(area))
+
 
 area(int(input("你想画的圆半径是多少？")))

@@ -8,12 +8,14 @@
 @Version      :1.0
 '''
 
-
 tip = '你忘记记录今天的涨粉量了'
+
+
 def check_growth(growth):
-  if growth:
-    print(growth)
-  else:
-    print(tip)
+    if growth:
+        print(growth)
+    else:
+        print(tip)
+
 
 check_growth(input('今日涨粉量'))
